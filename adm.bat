@@ -13,7 +13,6 @@ winget install -h -e --accept-source-agreements --accept-package-agreements --id
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Oracle.VirtualBox  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=AntiMicro.AntiMicro  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Google.GoogleDrive  
-winget install -h -e --accept-source-agreements --accept-package-agreements --id=Nvidia.GeForceExperience  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=TeamViewer.TeamViewer  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=RARLab.WinRAR  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=GOG.Galaxy  
@@ -38,4 +37,4 @@ winget install -h -e --accept-source-agreements --accept-package-agreements --id
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH5R558 
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH4QGHW 
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH516XP
-winget install -h -e --accept-source-agreements --accept-package-agreements --id=JackieLiu.NotepadsApp
+winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NHL4NSC67WM
