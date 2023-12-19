@@ -1,3 +1,4 @@
+winget settings --enable InstallerHashOverride
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=IvoSoft.ClassicShell 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Hibbiki.Chromium  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Mozilla.Firefox.DeveloperEdition -v "120.0b6"  
@@ -34,7 +35,11 @@ winget install -h -e --accept-source-agreements --accept-package-agreements --id
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Skillbrains.Lightshot 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Discord.Discord 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Ditto.Ditto 
+# Todo 
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH5R558 
+# Sticky
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH4QGHW 
+# Ear
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH516XP
+# Notepads
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NHL4NSC67WM
