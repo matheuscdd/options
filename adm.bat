@@ -1,7 +1,7 @@
 winget settings --enable InstallerHashOverride
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=IvoSoft.ClassicShell 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Hibbiki.Chromium  
-winget install -h -e --accept-source-agreements --accept-package-agreements --id=Mozilla.Firefox.DeveloperEdition -v "120.0b6"  
+winget install -h -e --accept-source-agreements --accept-package-agreements --id=Mozilla.Firefox.DeveloperEdition 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=OBSProject.OBSStudio  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Valve.Steam  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Ubisoft.Connect  
