@@ -28,6 +28,7 @@ winget install -h -e --accept-source-agreements --accept-package-agreements --id
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Docker.DockerDesktop  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=dbeaver.dbeaver  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Git.Git  
+winget install -h -e --accept-source-agreements --accept-package-agreements --id=GitHub.cli  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=EpicGames.EpicGamesLauncher  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Microsoft.PowerToys  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Microsoft.WindowsTerminal 
