@@ -1,4 +1,3 @@
-winget settings --enable InstallerHashOverride
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=IvoSoft.ClassicShell 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Hibbiki.Chromium  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Mozilla.Firefox.DeveloperEdition -v "120.0b6"  
@@ -31,7 +30,6 @@ winget install -h -e --accept-source-agreements --accept-package-agreements --id
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Git.Git  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=EpicGames.EpicGamesLauncher  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Microsoft.PowerToys  
-winget install -h -e --accept-source-agreements --accept-package-agreements --id=File-New-Project.EarTrumpet 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Microsoft.WindowsTerminal 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Adobe.Acrobat.Reader.64-bit 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Skillbrains.Lightshot 
@@ -39,5 +37,5 @@ winget install -h -e --accept-source-agreements --accept-package-agreements --id
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Ditto.Ditto 
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH5R558 
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH4QGHW 
+winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH516XP
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=JackieLiu.NotepadsApp
-shutdown /r
