@@ -35,11 +35,11 @@ winget install -h -e --accept-source-agreements --accept-package-agreements --id
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Skillbrains.Lightshot 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Discord.Discord 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Ditto.Ditto 
-# Todo 
+REM Todo 
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH5R558 
-# Sticky
+REM Sticky
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH4QGHW 
-# Ear
+REM Ear
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH516XP
-# Notepads
+REM Notepads
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NHL4NSC67WM
