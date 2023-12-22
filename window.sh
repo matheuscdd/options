@@ -7,3 +7,4 @@ EOF
 )
 
 sudo echo "$str" > /usr/bin/wstart.sh
+chmod +x /usr/bin/wstart.sh
