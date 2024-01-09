@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Name=DBeaver CE
+Comment=Universal Database Manager and SQL Client.
+Icon=io.dbeaver.DBeaverCommunity
+StartupWMClass=DBeaver
+StartupNotify=true
+X-Desktop-File-Install-Version=0.26
+Categories=IDE;Development;
+Keywords=Database;SQL;IDE;JDBC;ODBC;MySQL;PostgreSQL;
+GenericName=Database Manager
+MimeType=application/sql;
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/dbeaver/dbeaver io.dbeaver.DBeaverCommunity
+X-Flatpak=io.dbeaver.DBeaverCommunity
