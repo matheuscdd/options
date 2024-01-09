@@ -1,0 +1,174 @@
+```bash
+#!/bin/bash
+
+sudo apt remove -y xfce4-terminal
+sudo apt update && sudo apt upgrade -y
+sudo snap refresh
+flatpak update -y
+sudo apt install -y bat flameshot gpick wmctrl xdotool xbindkeys playerctl
+
+flatpak install --noninteractive flathub io.dbeaver.DBeaverCommunity rest.insomnia.Insomnia com.google.ChromeDev com.google.Chrome org.chromium.Chromium com.obsproject.Studio us.zoom.Zoom com.mongodb.Compass com.github.hluk.copyq com.vixalien.sticky com.brave.Browser
+
+sudo snap install -y code --classic code-insiders --classic slack node --classic shotcut --classic
+
+# python
+sudo apt install -y software-properties-common 
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.10 python3.10-venv
+python3.10 --version
+
+# Firefox Dev
+wget "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US" -O Firefox-dev.tar.bz2
+sudo tar xjf Firefox-dev.tar.bz2 -C /opt/
+rm -r Firefox-dev.tar.bz2
+sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox-dev
+
+# Docker
+sudo apt get update
+sudo apt get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt get update
+sudo apt get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo docker run hello-world
+sudo usermod -aG docker claus
+
+# gh
+type -p curl >/dev/null || (sudo apt update && sudo apt install -y curl)
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
+&& sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
+&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+&& sudo apt update \
+&& sudo apt install -y gh 
+gh auth login
+
+# Ícone menu iniciar
+wget "https://raw.githubusercontent.com/matheuscdd/options/main/assets/xfce4-zorinmenulite-symbolic.svg"
+sudo cp xfce4-zorinmenulite-symbolic.svg /usr/share/icons/hicolor/scalable/apps
+sudo cp xfce4-zorinmenulite-symbolic.svg /usr/share/icons/hicolor/symbolic/apps
+
+# Ícone notas
+wget "https://raw.githubusercontent.com/matheuscdd/options/main/assets/com.vixalien.sticky.svg"
+sudo cp com.vixalien.sticky.svg /var/lib/flatpak/exports/share/icons/hicolor/scalable/apps
+gtk-update-icon-cache -ft ~/.local/share/icons/hicolor
+
+# Ajustar app finder
+str=$(cat <<EOF
+#!/bin/bash
+xfce4-appfinder && sleep 0.1 && wmctrl -r "Application Finder" -b add,above
+EOF
+)
+
+sudo echo "$str" > /usr/bin/wstart.sh
+sudo chmod +x /usr/bin/wstart.sh
+
+# Ajustar atalho mongo e firefox
+str=$(cat <<EOF
+#!/bin/bash
+
+rawWindow=$(xdotool getactivewindow getwindowname)
+IFS="-"
+read -ra handleWindow <<< "$rawWindow"
+xbindkeys
+if [[ "${handleWindow[0]}" == "MongoDB Compass " ]]; then
+	sleep 0.1 && xdotool key 0xff0d
+else
+	killall xbindkeys
+	sleep 0.1
+	xdotool key --clearmodifiers "Control+Return"
+fi
+IFS=""
+sleep 0.1
+xbindkeys
+
+EOF
+)
+
+sudo echo "$str" > /usr/bin/mongoenter.sh
+sudo chmod +x /usr/bin/mongoenter.sh
+
+str=$(cat <<EOF
+#!/bin/bash
+
+has=$(xdotool getactivewindow getwindowname | grep -q "Firefox" && echo "1" || "2")
+
+xbindkeys
+if [[ -n "$has" ]]; then
+	sleep 0.1 && xdotool key --clearmodifiers "Control+Shift+P"
+else
+	killall xbindkeys
+	sleep 0.1
+	xdotool key --clearmodifiers "Control+Shift+N"
+fi
+sleep 0.1
+xbindkeys
+
+EOF
+)
+
+sudo echo "$str" > /usr/bin/firo.sh
+sudo chmod +x /usr/bin/firo.sh
+
+str=$(cat <<EOF
+"/usr/bin/mongoenter.sh"
+  Control + Return
+  
+"/usr/bin/mongoenter.sh"
+  Control + KP_Enter
+  
+"/usr/bin/firo.sh"
+  Control + Shift + N
+EOF
+)
+
+sudo echo "$str" > ~/.xbindkeysrc
+
+str=$(cat <<EOF
+keycode 18 = parenleft
+keycode 19 = parenright
+keycode 134 = braceleft
+keycode 135 = braceright
+EOF
+)
+
+sudo echo "$str" > ~/.Xmodmap
+xmodmap ~/.Xmodmap
+
+# Atualizar o bashrc
+str=$(cat <<EOF
+alias github="git config --get remote.origin.url | sed 's/git@github.com:/https:\/\/github.com\//' | sed 's/.git$//'"
+alias copypwd="pwd | xclip -selection clipboard"
+alias python="python3.10"
+alias vactive="source .venv/bin/activate"
+alias bat=batcat
+alias vm='VBoxManage startvm "ubuntu_server" --type headless && sleep 60 && ssh yor@192.168.1.150'
+alias update_firefox='wget "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US" -O Firefox-dev.tar.bz2 && sudo tar xjf  Firefox-dev.tar.bz2 -C /opt/'
+alias ..="cd .."
+alias selsh="docker exec -it portal_stream_selenium_test-web-1 python manage.py"
+alias porsh="docker exec -it portal_stream-web-1 python manage.py"
+mkcd() {
+  mkdir -p "$1" && cd "$1"
+}
+sf() {
+    local curr=$(git rev-parse --abbrev-ref HEAD)
+    local _date=$(date +%Y-%m-%d-\>%H_%M)
+    local new="sf_$curr-$_date"
+    git branch "$new"
+    echo "$new"
+}
+export BAT_THEME="GitHub"
+
+sticky=$(flatpak ps | grep com.vixalien.sticky)
+if [[ -z "$sticky" ]]; then
+    sleep 6 && flatpak run com.vixalien.sticky -i > /dev/null 2>&1 &
+fi
+EOF
+)
+sudo echo "$str" >> ~/.bashrc
+```
