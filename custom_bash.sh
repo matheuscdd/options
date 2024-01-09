@@ -4,7 +4,7 @@ alias python="python3.10"
 alias vactive="source .venv/bin/activate"
 alias bat=batcat
 alias vm='VBoxManage startvm "ubuntu_server" --type headless && sleep 60 && ssh yor@192.168.1.150'
-alias update_firefox='wget "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US" -O Firefox-dev.tar.bz2 && sudo tar xjf  Firefox-dev.tar.bz2 -C /opt/'
+alias update_firefox='wget "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US" -O Firefox-dev.tar.bz2 && sudo tar xjf  Firefox-dev.tar.bz2 -C /opt/ && rm -r Firefox-dev.tar.bz2'
 alias ..="cd .."
 alias selsh="docker exec -it portal_stream_selenium_test-web-1 python manage.py"
 alias porsh="docker exec -it portal_stream-web-1 python manage.py"
