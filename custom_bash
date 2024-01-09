@@ -19,8 +19,3 @@ sf() {
     echo "$new"
 }
 export BAT_THEME="GitHub"
-
-sticky=$(flatpak ps | grep com.vixalien.sticky)
-if [[ -z "$sticky" ]]; then
-    sleep 6 && flatpak run com.vixalien.sticky -i > /dev/null 2>&1 &
-fi
