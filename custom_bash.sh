@@ -8,6 +8,7 @@ alias update_firefox='wget "https://download.mozilla.org/?product=firefox-devedi
 alias ..="cd .."
 alias selsh="docker exec -it portal_stream_selenium_test-web-1 python manage.py"
 alias porsh="docker exec -it portal_stream-web-1 python manage.py"
+alias copy="xclip -selection clipboard"
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
