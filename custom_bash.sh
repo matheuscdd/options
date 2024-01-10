@@ -9,6 +9,8 @@ alias ..="cd .."
 alias selsh="docker exec -it portal_stream_selenium_test-web-1 python manage.py"
 alias porsh="docker exec -it portal_stream-web-1 python manage.py"
 alias copy="xclip -selection clipboard"
+alias selup="docker compose -f docker-compose.dev.test.selenium.yml -p portal_stream_selenium_test up"
+alias porup="docker compose -f docker-compose.dev.yml up"
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
