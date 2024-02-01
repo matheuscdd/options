@@ -1,4 +1,4 @@
-yor='yor@192.168.1.150'vmdow
+yor='yor@192.168.1.150'
 alias github="git config --get remote.origin.url | sed 's/git@github.com:/https:\/\/github.com\//' | sed 's/.git$//'"
 alias copypwd="pwd | xclip -selection clipboard"
 alias python="python3.10"
