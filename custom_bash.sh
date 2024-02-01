@@ -26,7 +26,7 @@ sf() {
 }
 Loader() {
   for i in $(seq 0 0.1 100); do
-    echo -ne "\rVM \"ubuntu_server\" is loading...$i%" 
+    echo -ne "\rVM \"ubuntu_server\" is loading [$i%]"
     sleep 0.1
   done
   tput cnorm 
