@@ -173,7 +173,7 @@
                 "commandline": "wsl --distribution Ubuntu fish",
                 "guid": "{17e5a7b3-ddc7-45aa-8587-c17c64e45a34}",
                 "hidden": false,
-                "icon": "%SystemDrive%\\Windows\\System32\\python.ico",
+                "icon": "%SystemDrive%\\Windows\\System32\\python.png",
                 "name": "Python",
                 "suppressApplicationTitle": true,
                 "tabColor": "#001426"
@@ -208,7 +208,7 @@
                 "commandline": "C:\\Windows\\System32\\cmd.exe /c node",
                 "guid": "{f9e56de4-c54c-4446-ae64-cecf67e3ca86}",
                 "hidden": false,
-                "icon": "%SystemDrive%\\Program Files\\nodejs\\node-js.png",
+                "icon": "%SystemDrive%\\Windows\\System32\\node-js.png",
                 "name": "Node",
                 "suppressApplicationTitle": true,
                 "tabColor": "#2C3628"
@@ -223,18 +223,6 @@
                 "name": "Git Bash",
                 "suppressApplicationTitle": true,
                 "tabColor": "#282A36"
-            },
-            {
-                "background": "#38003A",
-                "colorScheme": "Vintage",
-                "commandline": "cmd.exe /K C:\\ProgramData\\Anaconda3\\Scripts\\activate.bat",
-                "guid": "{d0b1ffd3-453e-4a7e-904c-f1d558c2c2f6}",
-                "hidden": false,
-                "icon": "%SystemDrive%\\Windows\\System32\\an.png",
-                "name": "Anaconda",
-                "startingDirectory": "C:/Users/mathe",
-                "suppressApplicationTitle": true,
-                "tabColor": "#38003A"
             },
             {
                 "bellStyle": "window",
