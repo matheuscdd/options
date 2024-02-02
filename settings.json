@@ -18,6 +18,10 @@
             }
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+shift+p"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -35,7 +39,7 @@
         },
         {
             "command": "find",
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+f"
         },
         {
             "command": 
@@ -57,6 +61,13 @@
                 "singleLine": false
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
+                "action": "commandPalette"
+            },
+            "keys": "ctrl+p"
         },
         {
             "command": 
@@ -84,6 +95,13 @@
                 "action": "splitPane",
                 "split": "auto"
             }
+        },
+        {
+            "command": 
+            {
+                "action": "closeTab"
+            },
+            "keys": "ctrl+w"
         }
     ],
     "alwaysShowNotificationIcon": false,
@@ -171,6 +189,18 @@
                 "name": "Java",
                 "suppressApplicationTitle": true,
                 "tabColor": "#273858"
+            },
+            {
+                "background": "#270065",
+                "bellStyle": "window",
+                "colorScheme": "Color Scheme 13",
+                "commandline": "csharprepl",
+                "guid": "{ad29808e-946b-4efd-98de-22af6f0193b0}",
+                "hidden": false,
+                "icon": "%SystemDrive%\\Windows\\System32\\c-sharp.png",
+                "name": "C Sharp",
+                "suppressApplicationTitle": true,
+                "tabColor": "#270065"
             },
             {
                 "background": "#2C3628",
