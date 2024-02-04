@@ -191,7 +191,7 @@
                 "tabColor": "#273858"
             },
             {
-                "background": "#270065",
+                "background": "#63398f",
                 "bellStyle": "window",
                 "colorScheme": "Color Scheme 13",
                 "commandline": "csharprepl",
@@ -200,7 +200,7 @@
                 "icon": "%SystemDrive%\\Windows\\System32\\c-sharp.png",
                 "name": "C Sharp",
                 "suppressApplicationTitle": true,
-                "tabColor": "#270065"
+                "tabColor": "#63398f"
             },
             {
                 "background": "#2C3628",
