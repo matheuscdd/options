@@ -203,6 +203,18 @@
                 "tabColor": "#63398F"
             },
             {
+                "background": "#7373b3",
+                "bellStyle": "window",
+                "colorScheme": "Color Scheme 13",
+                "commandline": "php -a",
+                "guid": "{7f8add5a-b395-4dc4-8536-c2a0f5b97343}",
+                "hidden": false,
+                "icon": "%SystemDrive%\\Windows\\System32\\php.png",
+                "name": "PHP",
+                "suppressApplicationTitle": true,
+                "tabColor": "#7373b3"
+            },
+            {
                 "background": "#2C3628",
                 "colorScheme": "Color Scheme 17",
                 "commandline": "C:\\Windows\\System32\\cmd.exe /c node",
