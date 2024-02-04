@@ -203,7 +203,7 @@
                 "tabColor": "#63398F"
             },
             {
-                "background": "#7373b3",
+                "background": "#7373B3",
                 "bellStyle": "window",
                 "colorScheme": "Color Scheme 13",
                 "commandline": "php -a",
@@ -212,7 +212,7 @@
                 "icon": "%SystemDrive%\\Windows\\System32\\php.png",
                 "name": "PHP",
                 "suppressApplicationTitle": true,
-                "tabColor": "#7373b3"
+                "tabColor": "#7373B3"
             },
             {
                 "background": "#2C3628",
@@ -367,7 +367,7 @@
             "brightRed": "#E74856",
             "brightWhite": "#F2F2F2",
             "brightYellow": "#F9F1A5",
-            "cursorColor": "#79FF00",
+            "cursorColor": "#FFFFFF",
             "cyan": "#3A96DD",
             "foreground": "#FFFFFF",
             "green": "#13A10E",
