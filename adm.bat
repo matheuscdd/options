@@ -1,4 +1,3 @@
-winget settings --enable InstallerHashOverride
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=IvoSoft.ClassicShell 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Hibbiki.Chromium  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Mozilla.Firefox.DeveloperEdition 
@@ -36,11 +35,14 @@ winget install -h -e --accept-source-agreements --accept-package-agreements --id
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Skillbrains.Lightshot 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Discord.Discord 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Ditto.Ditto 
-REM Todo 
+winget install -h -e --accept-source-agreements --accept-package-agreements --id=JernejSimoncic.Wget
+:: Todo 
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH5R558 
-REM Sticky
+:: Sticky
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH4QGHW 
-REM Ear
+:: Ear
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NBLGGH516XP
-REM Notepads
+:: Notepads
 winget install -h -e --accept-source-agreements --accept-package-agreements -s=msstore --id=9NHL4NSC67WM
+:: dotnet
+setx DOTNET_SYSTEM_GLOBALIZATION_INVARIANT 1 /M
