@@ -194,7 +194,7 @@
                 "background": "#63398F",
                 "bellStyle": "window",
                 "colorScheme": "Color Scheme 13",
-                "commandline": "csharprepl",
+                "commandline": "csharprepl -t themes\\own.json",
                 "guid": "{ad29808e-946b-4efd-98de-22af6f0193b0}",
                 "hidden": false,
                 "icon": "%SystemDrive%\\Windows\\System32\\c-sharp.png",
