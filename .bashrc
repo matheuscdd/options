@@ -6,7 +6,7 @@ alias vactive="source .venv/bin/activate"
 alias bat=batcat
 alias vmup="VBoxManage startvm 'ubuntu_server' --type headless && Loader && ssh $yor"
 alias vmdown='echo "VM "ubuntu_server" is down" && VBoxManage controlvm "ubuntu_server" acpipowerbutton'
-alias vm="ssh yor@192.168.1.150"
+alias vm="ssh $yor"
 alias vma="echo a | vm sudo -S"
 alias update_firefox='wget "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US" -O Firefox-dev.tar.bz2 && sudo tar xjf  Firefox-dev.tar.bz2 -C /opt/ && rm -r Firefox-dev.tar.bz2'
 alias ..="cd .."
