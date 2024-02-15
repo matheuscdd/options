@@ -90,10 +90,10 @@
       <property name="Super_L" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;ccedilla" type="string" value="/usr/bin/./wstart.sh">
+      <property name="&lt;Super&gt;ccedilla" type="string" value="/usr/bin/wstart.sh">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Primary&gt;ccedilla" type="string" value="/usr/bin/./wstart.sh">
+      <property name="&lt;Primary&gt;ccedilla" type="string" value="/usr/bin/wstart.sh">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Primary&gt;Right" type="string" value="amixer set Master 3%+"/>
