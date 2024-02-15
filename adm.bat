@@ -1,3 +1,4 @@
+winget settings --enable InstallerHashOverride
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=IvoSoft.ClassicShell 
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Hibbiki.Chromium  
 winget install -h -e --accept-source-agreements --accept-package-agreements --id=Mozilla.Firefox.DeveloperEdition 
