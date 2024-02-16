@@ -156,21 +156,17 @@
                 "tabColor": "#01112C"
             },
             {
-                "bellStyle": "window",
-                "colorScheme": "Color Scheme 13",
-                "cursorShape": "filledBox",
-                "experimental.retroTerminalEffect": false,
-                "guid": "{4dd1e689-b517-5f39-947d-78e8a8bdf958}",
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
-                "name": "Ubuntu 20.04.6 LTS",
-                "source": "CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc",
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc",
                 "suppressApplicationTitle": true,
-                "tabColor": "#300A24"
+                "tabColor": "#300a24"
             },
             {
                 "background": "#001426",
                 "bellStyle": "window",
-                "commandline": "wsl --distribution Ubuntu fish",
+                "commandline": "wsl --distribution Ubuntu-22.04",
                 "guid": "{17e5a7b3-ddc7-45aa-8587-c17c64e45a34}",
                 "hidden": false,
                 "icon": "%SystemDrive%\\Windows\\System32\\python.png",
@@ -239,7 +235,7 @@
             {
                 "bellStyle": "window",
                 "colorScheme": "Tokyo Night",
-                "commandline": "%SystemRoot%\\System32\\cmd.exe /k ubuntu_server_vm",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe /k ubuntu_server",
                 "guid": "{27b9ff97-a959-42db-bdad-684b3f08fd9e}",
                 "hidden": false,
                 "icon": "https://i.postimg.cc/xdbZRZSr/linux.png",
@@ -249,38 +245,27 @@
                 "useAtlasEngine": false
             },
             {
-                "colorScheme": "Shades of Purple",
-                "commandline": "ubuntu.exe",
-                "guid": "{ba52b8da-780e-4635-80cb-d1b0561f06db}",
-                "hidden": false,
-                "icon": "https://assets.ubuntu.com/v1/49a1a858-favicon-32x32.png",
-                "name": "Ubuntu 22.04 Test",
-                "suppressApplicationTitle": true,
-                "tabColor": "#121327",
-                "tabTitle": "Ubuntu Test"
-            },
-            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{7acea832-cae9-53a4-a7ed-6d58b8b9d8f4}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{2ed8f884-ce0d-5a34-98f7-d53d93c30923}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": true,
                 "name": "Command Prompt"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+                "hidden": true,
+                "name": "Ubuntu-22.04",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
