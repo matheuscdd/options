@@ -1,0 +1,545 @@
+<html><head>
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/8fe5a0a4851983074b74abb7493aa2e80f5bf5e6.css?meteor_css_resource=true">
+<title>TutorMundi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- SEO INFORMATION -->
+  <meta name="description" content="Instant help on your homework question. Get answers within 5 min on your smartphone!">
+  <meta name="robots" content="index,follow,NOODP">
+  <meta name="keywords" content="tutor, tutors, tutoring, online tutors, online tutoring, learning, online learning, online classes, online teachers, individual classes, individual tutoring, individual learning, individual teachers, tutores, tutores online, aprendizado online, professores online, aulas online, aulas individuais, professores individuais, aprendizado, aulas, ensino individual, aprendizado individual">
+  <!-- FACEBOOK Open Graph Tags - Learn: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="fb:app_id" content="1510511639242206">
+  <meta property="og:url" content="https://app.tutormundi.com">
+  <meta property="og:type" content="app">
+  <meta property="og:title" content="TutorMundi">
+  <meta property="og:description" content="Tenha aulas particulares online com professores do ITA, USP, UFRJ em tempo real. Aprenda qualquer matéria do Ensino Médio, Fundamental ou ENEM sem precisar sair de casa.">
+  <meta property="og:image" content="https://app.tutormundi.com/img/tm-logo.png">
+  <!-- GOOGLE webmasters -->
+  <meta name="google-site-verification" content="jjmT4J_q0jQo9oZIvvAFwdZ_uIIMoshxDMPWgrNczuc">
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://d1lzq2es6zisuf.cloudfront.net/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="https://d1lzq2es6zisuf.cloudfront.net/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://d1lzq2es6zisuf.cloudfront.net/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://d1lzq2es6zisuf.cloudfront.net/android-chrome-192x192.png" sizes="192x192">
+  <link rel="manifest" href="https://d1lzq2es6zisuf.cloudfront.net/tm-manifest.json">
+  <link rel="mask-icon" href="https://d1lzq2es6zisuf.cloudfront.net/safari-pinned-tab.svg" color="#5D31FF">
+  <meta name="msapplication-TileColor" content="#5D31FF">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png" href="https://d1lzq2es6zisuf.cloudfront.net/mstile-144x144.png">
+  <meta name="theme-color" content="#5D31FF">
+  <!-- Wootric -->
+  <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-PE36C50T44&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-4.1.1-min.gz.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://widget.intercom.io/widget/qy86e3nz"></script><script type="text/javascript" src="https://cdn.wootric.com/wootric-sdk.js"></script>
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Londrina+Solid&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <!-- CHECKOUT CARD IN MODAL -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+  <!-- Global site tag (gtag.js) - Google Ads: 774570862 -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-774570862"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-774570862');
+  </script> -->
+  <!-- INTERCOM -->
+  <script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/qy86e3nz';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+  </script>
+  <!-- Facebook Pixel Code -->
+  <!-- <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '343640672426737');
+    fbq('track', 'PageView');
+  </script> -->
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=343640672426737&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- tools that depend on other parts of the code (OneSignal, CDN, Hotjar) -->
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script type="text/javascript">
+    // Wait for meteor to become available to initialize Heap and Hotjar
+    const interval = setInterval(() => {
+      if (typeof Meteor === 'undefined') return;
+      if (typeof Utils === 'undefined') return;
+
+      window.clearInterval(interval);
+
+      if (!Utils.isProduction()) return;
+
+      if (!Meteor.isCordova) {
+        const appId = lodash.get(Meteor.settings, 'public.onesignal.appId', false);
+
+        if (window.OneSignal && appId) {
+          OneSignal.push(function() {
+            OneSignal.init({
+              appId,
+              safari_web_id: "web.onesignal.auto.6a76584b-4903-4cb9-b550-82d6a06974fc",
+              notifyButton: {
+                enable: false,
+              },
+            });
+          });
+        }
+      }
+
+      // Programatically changes <link> tags in order to serve them via CDN
+      const appleTouchTags = document.querySelectorAll('link[rel="apple-touch-icon"');
+      const faviconTags = document.querySelectorAll('link[rel="icon"]');
+      const manifestTag = document.querySelector('link[rel="manifest"]');
+      const maskIconTag = document.querySelector('link[rel="mask-icon"]');
+      const metaTag = document.querySelector('meta[name="msapplication-TileImage"]');
+      const linkTags = [...appleTouchTags, ...faviconTags, manifestTag, maskIconTag];
+
+      if (metaTag) {
+        const tagContent = metaTag.getAttribute('content') || '';
+        const tagcontentWithCDNUrl = `${Utils.getCDNUrl()}${tagContent}`;
+        if (tagcontentWithCDNUrl) metaTag.setAttribute('href', tagcontentWithCDNUrl);
+      }
+
+      linkTags.forEach((tag) => {
+        const tagHref = tag.getAttribute('href') || '';
+        const hrefWithCDNUrl = `${Utils.getCDNUrl()}${tagHref}`;
+
+        if (hrefWithCDNUrl) tag.setAttribute('href', hrefWithCDNUrl);
+      });
+
+      // Hotjar
+      (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2469558,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    }, 1);
+  </script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    if (typeof feather !== 'undefined') {
+      feather.replace();
+    }
+  </script>
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151605" async=""></script><style type="text/css">.tm-primary-color{color:#5d31ff}.tm-grey{color:rgba(0,0,0,.4)}.tm-orange{color:#f0ad4e}.tm-black{color:#000}body>textarea{padding:0;margin:0;border:none;display:block}#tippy-2 .fastboard-tip,#tippy-6 .fastboard-tip,#tippy-9 .fastboard-tip,#tippy-10 .fastboard-tip,#tippy-11 .fastboard-tip,#tippy-12 .fastboard-tip,#tippy-13 .fastboard-tip,#tippy-14 .fastboard-tip,#tippy-15 .fastboard-tip,#tippy-16 .fastboard-tip #tippy-17 .fastboard-tip,#tippy-18 .fastboard-tip,#tippy-20 .fastboard-tip,#tippy-22 .fastboard-tip,#tippy-24 .fastboard-tip,#tippy-26 .fastboard-tip{display:none}.fastboard-toolbar-hotkey{width:auto!important;min-width:24px!important;padding:0 2px}#tippy-23{z-index:10!important}.fastboard-icon.light .fastboard-icon-fill-color,.fastboard-toolbar-handler.light .fastboard-toolbar-handler-image-fill-color{fill:#000!important}.fastboard-icon .fastboard-icon-stroke-color,.fastboard-toolbar-handler.light .fastboard-toolbar-handler-image-stroke-color{stroke:#000!important}.fastboard-icon.is-active .fastboard-icon-stroke-color{stroke:#5d31ff!important}.fastboard-icon.is-active .fastboard-icon-fill-color{fill:#5d31ff!important}.fastboard-toolbar-color-btn{border:1.5px solid transparent!important}.fastboard-toolbar-color-btn.is-active{border-color:#5d31ff!important}.fastboard-redo-undo-btn:not(:disabled):hover,.fastboard-toolbar-app-btn:not(:disabled,.is-loading,.is-failed):hover,.fastboard-toolbar-btn:not(:disabled):hover{background-color:rgba(0,0,0,.035)!important;border-radius:12px;transition:.3s}.fastboard-toolbar-btn.light:not(:disabled):hover{border-radius:4px}.fastboard-toolbar-btn{transition:.3s}.fastboard-toolbar-shapes .fastboard-icon-stroke-color{stroke:#5d6066!important}.fastboard-slider{width:calc(100% - 10px)!important;margin:auto}.fastboard-slider .fastboard-slider-track{color:#5d31ff!important}.fastboard-toolbar-app-btn.countdown.light span,.fastboard-toolbar-app-btn.geogebra.light span,.fastboard-toolbar-app-btn.image.light span,.fastboard-toolbar-app-btn.slide.light span,.fastboard-toolbar-app-btn.video.light span{color:#000!important}.tippy-box{border-radius:12px!important;border:1px solid #e5e8f0!important;background:#fff;box-shadow:unset!important;margin-left:4px;border-radius:18px}.tippy-arrow:before{display:none}.fastboard-toolbar-app-btn{gap:8px!important;margin-bottom:24px;padding:0!important;position:relative!important;height:95px!important;display:flex!important;flex-direction:column;align-items:center;height:80px;justify-content:center;margin-top:12px;transition:.3s}.fastboard-toolbar-app-btn-text{font-size:12px!important;text-align:center!important;font-family:Nunito!important;font-style:normal!important;font-weight:800!important;line-height:13px!important;color:rgba(0,0,0,.12)!important}.fastboard-toolbar-panel.apps{grid-template-columns:repeat(4,2fr)!important;gap:10px!important;padding:8px 8px 0}.fastboard-toolbar-app-btn:not(:nth-child(-n+5)) img,.microphone img{opacity:.12}.fastboard-toolbar-app-btn:not(:disabled,.is-loading,.is-failed,:nth-child(-n+5)):hover{background:unset!important}.fastboard-toolbar-app-btn:before,.microphone:before{content:"Em breve";position:absolute;display:flex;flex-direction:column;justify-content:center;width:54px;height:15px;border-radius:5px;background:#f0f0f0;color:#c4c4c4;text-align:center;font-family:Nunito;font-size:8.16px;font-style:normal;font-weight:700;line-height:5px;letter-spacing:.2px;right:0;top:-10px}.chat-call-mobile{background:#fff;height:49px}.chat-call-mobile .microphone{border:unset;margin-right:0;margin-top:0}.chat-call-mobile .microphone img{opacity:.12;width:36px;margin-top:17px;object-position:-6px 0;margin-bottom:-3px}.chat-call-mobile .microphone:before{right:4px;top:3px;font-size:6.6px;width:43px;height:12px;line-height:10px}.desktop-call .microphone{margin-top:28px;margin-right:22px}.desktop-call .microphone:before{right:-5px;top:-10px}.fastboard-toolbar-app-btn.countdown:before,.fastboard-toolbar-app-btn.geogebra:before,.fastboard-toolbar-app-btn.image:before,.fastboard-toolbar-app-btn.slide:before,.fastboard-toolbar-app-btn.video:before{display:none}.fastboard-toolbar-app-btn-icon{pointer-events:none;height:40px!important;width:42px!important}.fastboard-toolbar-app-btn.image img{width:38px!important}[data-tippy-root]{max-width:calc(80vw - 10px)!important;z-index:100!important}.fastboard-toolbar-app-btn.video img{object-position:0 -2px}.fastboard-toolbar-app-btn.Plyr img{width:43px!important;object-position:1px -2px}.fastboard-toolbar-app-btn.image img{object-position:1px -2px}.fastboard-toolbar-app-btn.slide img{object-position:-1px 0}#tippy-19,#tippy-23,#tippy-25{animation:fadeInEffect .3s ease-in-out forwards;opacity:0}@keyframes fadeInEffect{0%{opacity:0}to{opacity:1}}.tippy-box.fastboard-tip.fastboard-panel .tippy-content{padding:16px}.fastboard-toolbar-colors,.fastboard-toolbar-shapes{width:100%}.fastboard-toolbar-color-item{width:20px!important;height:20px!important}.fastboard-toolbar-color-btn,.fastboard-toolbar-shape-btn{height:28px!important;width:28px!important}.microphone{cursor:pointer}@media (max-width:960px){.fastboard-toolbar-app-btn-icon{height:30px!important;width:30px!important}.fastboard-toolbar-app-btn-text{font-size:9px!important;line-height:10px!important}.fastboard-toolbar-app-btn.image img,.fastboard-toolbar-app-btn.Plyr img{object-position:1px 0}.fastboard-toolbar-app-btn.Plyr img{width:34px!important}.fastboard-toolbar-app-btn:before,.microphone:before{right:3px;top:-8px;font-size:6.6px;width:43px;height:13px;line-height:11px}.fastboard-toolbar-app-btn{display:flex!important;height:72px!important;position:relative!important;width:52px;margin-top:6px!important}.fastboard-toolbar-panel.apps{gap:5px!important;padding:0!important}.tm-tabs .nav-tabs{height:49px}.fastboard-toolbar-app-btn.youtube img{width:34px!important;object-position:0 -3px}.fastboard-toolbar-app-btn.image img{width:28px!important;object-position:0 -2px}}@media (min-width:960px){.fastboard-toolbar-app-btn:before,.microphone:before{right:-4px;top:-7px}.fastboard-toolbar-app-btn.Plyr img{object-position:1px -3px}.fastboard-toolbar-app-btn.youtube img{object-position:0 -3px}.fastboard-panel .tippy-content{padding:24px 16px 16px}.fastboard-toolbar-panel.apps{padding:8px 0 0!important;row-gap:16px!important}}.chat-room-full{height:100vh;overflow:hidden}.chat-room-full .chat-effect .chat-messagebox{opacity:1;transition:opacity .3s ease}.chat-room-full .chat-none-effect .chat-messagebox{opacity:0}.chat-room-full .chat-ended{z-index:100}.chat-room-full .whiteboard-size{max-width:100%;width:638px;order:-1;height:calc(100% - 100px);position:absolute;margin:0 auto;left:0;right:0;background:#fff;top:100px;opacity:1;transition:opacity .3s ease}.chat-room-full .fastboard-toolbar-handler svg{opacity:1}.chat-room-full .mobile-none{z-index:-111;opacity:0}.chat-room-full .whiteboard-zone{max-width:100%;height:100%;overflow:hidden}.chat-room-full .whiteboard-zone .fastboard-toolbar-contents{backdrop-filter:unset!important;-webkit-backdrop-filter:unset!important;background:#fff!important}.chat-room-full .whiteboard-zone .fastboard-redo-undo-btn:disabled{opacity:.25!important}.chat-room-full .whiteboard-zone #whiteboard,.chat-room-full .whiteboard-zone .netless-window-manager-wrapper{width:100%!important;height:100%!important}.chat-room-full .whiteboard-zone .whiteboard-zone path{stroke-width:1.35px}.chat-room-full .whiteboard-zone .fastboard-toolbar-scrollable{padding:12px 8px!important;gap:8px!important}.chat-room-full .whiteboard-zone .fastboard-redo-undo{padding:10px 12px!important;gap:6px!important}.chat-room-full .whiteboard-zone .fastboard-redo-undo,.chat-room-full .whiteboard-zone .fastboard-toolbar-contents{border-radius:100px!important}.chat-room-full .whiteboard-zone .fastboard-toolbar-btn.clear,.chat-room-full .whiteboard-zone .fastboard-toolbar-btn.clicker{display:none!important}.chat-room-full .whiteboard-zone .fastboard-toolbar-btn-interactive:nth-child(3){order:-1}.chat-room-full .whiteboard-zone .fastboard-bottom,.chat-room-full .whiteboard-zone .fastboard-bottom-left,.chat-room-full .whiteboard-zone .fastboard-bottom-right,.chat-room-full .whiteboard-zone .fastboard-left{z-index:10!important}.chat-room-full .whiteboard-zone #drop-zone,.chat-room-full .whiteboard-zone .class-chat.with-board .recording-tools{width:420px}@media (min-width:960px){.chat-room-full #drop-zone,.chat-room-full .class-chat.with-board .recording-tools{width:420px}.chat-room-full .class-chat.with-board{position:unset;z-index:100}.chat-room-full .whiteboard-zone{display:block;position:relative}.chat-room-full .class-chat.with-board{flex-grow:1}.chat-room-full .whiteboard-size{width:calc(100vw - 420px);order:-1;position:relative;left:0;top:unset;transform:unset;height:100%;opacity:1;z-index:1}.chat-room-full .fastboard-left{width:100%;bottom:75px;top:8px}.chat-room-full .chat-ended{z-index:0}.chat-room-full .container-tabs.tm-tabs,.chat-room-full .fastboard-toolbar-handler{display:none}.chat-room-full .chat-header-container.tm-shadow-3{box-shadow:0 2px 18px 0 rgba(0,0,0,.1);-webkit-box-shadow:0 2px 18px 0 rgba(0,0,0,.1)}.chat-room-full .whiteboard-zone{height:100vh}.chat-room-full .chat-none-effect .chat-messagebox{opacity:1}}.hand-button{order:-2}.netless-whiteboard.cursor-hand{cursor:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMuMzc1IDE0LjYyNUwuODQ0IDkuODQ0LjU2MyA5bC44NDMtMS4xMjVoMS40MDdMNC43OCA5Ljg0NFY0LjVsLjU2My0yLjUzMWgyLjUzMUw4LjQzOC44NDRsMS40MDYuMjgxIDEuNDA2Ljg0NGgxLjY4OGwxLjQwNiAxLjQwNiAxLjQwNi4yODEuODQ0IDUuNjI1LTEuMTI1IDYuNDY5LTIuMjUgMi44MTMtNS4zNDQtLjI4Mi00LjUtMy42NTZ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTE2LjE2MSAzLjExM2MtLjU2NC0uNTA4LTEuNDEtLjYzNS0yLjExNS0uMzggMC0uMzgyLS4xNC0uNzYzLS41NjQtMS4xNDUtLjI4Mi0uMjU0LS44NDYtLjUwOC0xLjU1MS0uNTA4LS40MjMgMC0uNzA1LjEyNy0uOTg3LjEyNyAwLS4yNTQtLjE0MS0uMzgxLS4yODItLjYzNS0uNzA1LS43NjMtMi4xMTUtLjc2My0yLjgyIDAtLjI4Mi4yNTQtLjU2NC41MDgtLjU2NC43NjItLjI4MiAwLS41NjQtLjEyNy0uODQ2LS4xMjctLjcwNSAwLTEuMTI4LjI1NC0xLjU1MS42MzYtLjcwNS42MzUtLjcwNSAxLjY1Mi0uNzA1IDEuNjUydjQuODI5Yy0uNDIzLS4zODItMS4xMjktMS4wMTctMi4xMTYtMS4wMTctLjI4MiAwLS43MDUuMTI3LS45ODcuMjU0LS41NjQuMjU0LS44NDYuNjM1LS45ODcgMS4xNDQtLjQyMyAxLjI3Ljg0NiAzLjA1Ljg0NiAzLjE3Ny4xNDEuMTI3IDEuNjkyIDMuNDMgMy4xMDMgNC44MjkgMS40MSAxLjUyNCAyLjk2IDIuNDE0IDYuOTA5IDIuNDE0IDQuMDkgMCA1LjkyMi0yLjAzMyA1LjkyMi02LjQ4di02Ljk5YzAtLjEyNy4xNDEtMS42NTItLjcwNS0yLjU0MnptLTcuNzU1LS41MDhjMC0uMzgxLS4xNDEtMS4yNy43MDUtMS4yNy43MDUgMCAuNzA1LjYzNS43MDUgMS4yN3Y1LjA4M2MwIC4zODEuMjgyLjYzNi43MDUuNjM2cy43MDUtLjI1NS43MDUtLjYzNlYyLjg2czAtLjUwOC43MDUtLjUwOGMuODQ2IDAgLjcwNSAxLjE0NC43MDUgMS4xNDR2NC4xOTNjMCAuMzgxLjI4Mi42MzYuNzA1LjYzNnMuNzA1LS4yNTUuNzA1LS42MzZ2LTMuMDVjMC0uMTI3IDAtLjc2Mi43MDUtLjc2MnMuNzA1IDEuMjcuNzA1IDEuMjd2Ny40OThjMCA0LjMyLTEuODMzIDUuMjEtNC41MTIgNS4yMS0zLjM4NCAwLTQuNjUzLS42MzUtNS43ODEtMi4wMzMtMS4yNy0xLjI3LTIuOTYyLTQuNTc1LTIuOTYyLTQuNzAyLS40MjMtLjM4MS0uOTg3LTEuNTI1LS44NDYtMi4wMzMgMC0uMTI3LjE0MS0uMjU0LjI4Mi0uMzgxLjE0MSAwIC4yODItLjEyNy4yODItLjEyNy41NjQgMCAxLjEyOC42MzUgMS4yNy44OWwuODQ2IDEuMTQzYy4xNC4yNTQuNTY0LjM4MS44NDYuMjU0LjU2NCAwIC43MDUtLjI1NC43MDUtLjUwOFYzLjc0OWMwLS41MDkgMC0xLjI3MS43MDUtMS4yNzEuNTY0IDAgLjcwNS4zODEuNzA1IDEuMDE3djQuMTkzYzAgLjM4MS4yODIuNjM2LjcwNS42MzZzLjcwNS0uMjU1LjcwNS0uNjM2VjIuNjA1eiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg==") 7 7,auto!important;cursor:-webkit-image-set(url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMuMzc1IDE0LjYyNUwuODQ0IDkuODQ0LjU2MyA5bC44NDMtMS4xMjVoMS40MDdMNC43OCA5Ljg0NFY0LjVsLjU2My0yLjUzMWgyLjUzMUw4LjQzOC44NDRsMS40MDYuMjgxIDEuNDA2Ljg0NGgxLjY4OGwxLjQwNiAxLjQwNiAxLjQwNi4yODEuODQ0IDUuNjI1LTEuMTI1IDYuNDY5LTIuMjUgMi44MTMtNS4zNDQtLjI4Mi00LjUtMy42NTZ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTE2LjE2MSAzLjExM2MtLjU2NC0uNTA4LTEuNDEtLjYzNS0yLjExNS0uMzggMC0uMzgyLS4xNC0uNzYzLS41NjQtMS4xNDUtLjI4Mi0uMjU0LS44NDYtLjUwOC0xLjU1MS0uNTA4LS40MjMgMC0uNzA1LjEyNy0uOTg3LjEyNyAwLS4yNTQtLjE0MS0uMzgxLS4yODItLjYzNS0uNzA1LS43NjMtMi4xMTUtLjc2My0yLjgyIDAtLjI4Mi4yNTQtLjU2NC41MDgtLjU2NC43NjItLjI4MiAwLS41NjQtLjEyNy0uODQ2LS4xMjctLjcwNSAwLTEuMTI4LjI1NC0xLjU1MS42MzYtLjcwNS42MzUtLjcwNSAxLjY1Mi0uNzA1IDEuNjUydjQuODI5Yy0uNDIzLS4zODItMS4xMjktMS4wMTctMi4xMTYtMS4wMTctLjI4MiAwLS43MDUuMTI3LS45ODcuMjU0LS41NjQuMjU0LS44NDYuNjM1LS45ODcgMS4xNDQtLjQyMyAxLjI3Ljg0NiAzLjA1Ljg0NiAzLjE3Ny4xNDEuMTI3IDEuNjkyIDMuNDMgMy4xMDMgNC44MjkgMS40MSAxLjUyNCAyLjk2IDIuNDE0IDYuOTA5IDIuNDE0IDQuMDkgMCA1LjkyMi0yLjAzMyA1LjkyMi02LjQ4di02Ljk5YzAtLjEyNy4xNDEtMS42NTItLjcwNS0yLjU0MnptLTcuNzU1LS41MDhjMC0uMzgxLS4xNDEtMS4yNy43MDUtMS4yNy43MDUgMCAuNzA1LjYzNS43MDUgMS4yN3Y1LjA4M2MwIC4zODEuMjgyLjYzNi43MDUuNjM2cy43MDUtLjI1NS43MDUtLjYzNlYyLjg2czAtLjUwOC43MDUtLjUwOGMuODQ2IDAgLjcwNSAxLjE0NC43MDUgMS4xNDR2NC4xOTNjMCAuMzgxLjI4Mi42MzYuNzA1LjYzNnMuNzA1LS4yNTUuNzA1LS42MzZ2LTMuMDVjMC0uMTI3IDAtLjc2Mi43MDUtLjc2MnMuNzA1IDEuMjcuNzA1IDEuMjd2Ny40OThjMCA0LjMyLTEuODMzIDUuMjEtNC41MTIgNS4yMS0zLjM4NCAwLTQuNjUzLS42MzUtNS43ODEtMi4wMzMtMS4yNy0xLjI3LTIuOTYyLTQuNTc1LTIuOTYyLTQuNzAyLS40MjMtLjM4MS0uOTg3LTEuNTI1LS44NDYtMi4wMzMgMC0uMTI3LjE0MS0uMjU0LjI4Mi0uMzgxLjE0MSAwIC4yODItLjEyNy4yODItLjEyNy41NjQgMCAxLjEyOC42MzUgMS4yNy44OWwuODQ2IDEuMTQzYy4xNC4yNTQuNTY0LjM4MS44NDYuMjU0LjU2NCAwIC43MDUtLjI1NC43MDUtLjUwOFYzLjc0OWMwLS41MDkgMC0xLjI3MS43MDUtMS4yNzEuNTY0IDAgLjcwNS4zODEuNzA1IDEuMDE3djQuMTkzYzAgLjM4MS4yODIuNjM2LjcwNS42MzZzLjcwNS0uMjU1LjcwNS0uNjM2VjIuNjA1eiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg==") 7 7,auto)!important}.netless-whiteboard.cursor-hand-grasp{cursor:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMjEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIuNDA2IDEzLjA5NEwxLjU2MiAxMGwuODQ0LTEuMTI1IDEuMTI1LS41NjMgMS4xMjUtLjI4MXYtMi4yNWwuNTYzLTEuOTY5IDEuMTI1LS41NjIgMS40MDYuNTYyLjI4MS0xLjEyNS44NDQtLjg0MyAxLjY4OC4yOCAxLjQwNi44NDUgMS42ODcuMjggMS4xMjUgMS45N2gxLjQwNmwxLjEyNSAxLjQwNi4yODIgNi40NjktMS4xMjUgMy4zNzQtMS42ODggMS40MDdMMTMuMDk0IDE5bC0yLjgxMy44NDQtMy4wOTMtMS4xMjUtMS4xMjUtLjg0NC0xLjY4OC0yLjI1LTEuOTY5LTIuNTMxeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNy4zMzYgMy4wNTljLjA0LS41MTQuMjQ4LS45OTguNTg4LTEuMzcuMzQtLjM3Mi43OTMtLjYxIDEuMjgtLjY3Mi40ODktLjA2My45ODIuMDUyIDEuMzk5LjMyNy40MTYuMjc0LjczLjY5Ljg4NyAxLjE4LjMyNC0uMjA3LjY5NC0uMzIgMS4wNzQtLjMyNy4zNzktLjAwNi43NTMuMDkzIDEuMDg0LjI4OC4zMy4xOTUuNjA1LjQ3OS43OTYuODIyLjE5Mi4zNDQuMjkzLjczNC4yOTIgMS4xMzJ2LjI1Yy4xODQtLjA2Ny4zNzYtLjEwMS41Ny0uMWguNDI4YzEuMTggMCAyLjEzNiAxLjAwMyAyLjEzNiAyLjI0djUuNDVhLjYxMS42MTEgMCAwMS4wMDUuMDc4YzAgMi41NTMtLjkxOSA0LjUxLTIuMzI4IDUuODI1LTEuNCAxLjMwNC0zLjI0OCAxLjk0My01LjA4IDEuOTQzLTMuNzIgMC02LjE0Ny0yLjYxNC03Ljg5LTUuNjU2YTU2LjE0NyA1Ni4xNDcgMCAwMS0xLjExNC0xLjg2NGMtMS4yOS0yLjIzLjI3My01LjAyNSAyLjczMi01LjAyOXYtMi41NGMwLS4zODYuMDk2LS43NjcuMjc3LTEuMTAzLjE4Mi0uMzM3LjQ0NC0uNjE4Ljc2LS44MTdhMi4wNTcgMi4wNTcgMCAwMTIuMTA0LS4wNTd6bS0uMDA3IDEuOTc3YzAtLjI3Ny0uMTA1LS41NDMtLjI5Mi0uNzM5YS45NzQuOTc0IDAgMDAtLjcwNS0uMzA2Ljk3NC45NzQgMCAwMC0uNzA1LjMwNiAxLjA3MiAxLjA3MiAwIDAwLS4yOTIuNzR2NS41MjdjMCAuMTU5LS4wNi4zMS0uMTY3LjQyMmEuNTU3LjU1NyAwIDAxLS40MDMuMTc2LjU1Ny41NTcgMCAwMS0uNDAzLS4xNzYuNjEyLjYxMiAwIDAxLS4xNjctLjQyMlY4Ljc3MWMtMS41OTkuMDA0LTIuNTcyIDEuODA1LTEuNzU3IDMuMjE1LjQwNy43MDUuNzk0IDEuMzU3IDEuMDk2IDEuODMybC4wMDcuMDEyLjAwOC4wMTJjMS42NzUgMi45MjggMy44MDUgNS4wODggNi45MTcgNS4wODggMS41ODkgMCAzLjE1OC0uNTU2IDQuMzI0LTEuNjQyIDEuMTQtMS4wNjQgMS45MjYtMi42NjUgMS45NDUtNC44NTVhLjYxMS42MTEgMCAwMS0uMDA0LS4wNzZWNi44MjljMC0uMjc3LS4xMDUtLjU0My0uMjkyLS43NGEuOTc0Ljk3NCAwIDAwLS43MDUtLjMwNmgtLjQyOGEuNTU3LjU1NyAwIDAwLS40MDMuMTc1LjYxMy42MTMgMCAwMC0uMTY3LjQyM3YxLjE5NWMwIC4xNTktLjA2LjMxLS4xNjYuNDIzYS41NTcuNTU3IDAgMDEtLjQwMy4xNzUuNTU3LjU1NyAwIDAxLS40MDMtLjE3NS42MTIuNjEyIDAgMDEtLjE2Ny0uNDIzVjQuNDRjMC0uMjc3LS4xMDUtLjU0My0uMjkyLS43NGEuOTc0Ljk3NCAwIDAwLS43MDUtLjMwNi45NzQuOTc0IDAgMDAtLjcwNS4zMDYgMS4wNzIgMS4wNzIgMCAwMC0uMjkyLjc0djIuNTRjMCAuMTU4LS4wNi4zMS0uMTY3LjQyMmEuNTU3LjU1NyAwIDAxLS40MDMuMTc1LjU1Ny41NTcgMCAwMS0uNDAzLS4xNzUuNjEzLjYxMyAwIDAxLS4xNjctLjQyMlYzLjI0NGMwLS4yNzgtLjEwNS0uNTQ0LS4yOTItLjc0YS45NzQuOTc0IDAgMDAtLjcwNS0uMzA2Ljk3NC45NzQgMCAwMC0uNzA1LjMwNiAxLjA3MiAxLjA3MiAwIDAwLS4yOTIuNzR2NC4zMzJjMCAuMTU5LS4wNi4zMS0uMTY3LjQyM2EuNTU3LjU1NyAwIDAxLS40MDMuMTc1LjU1Ny41NTcgMCAwMS0uNDAzLS4xNzUuNjEzLjYxMyAwIDAxLS4xNjctLjQyM3YtMi41NHoiIGZpbGw9IiMwMDAiLz48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjMzNiAzLjA1OWMuMDQtLjUxNC4yNDgtLjk5OC41ODgtMS4zNy4zNC0uMzcyLjc5My0uNjEgMS4yOC0uNjcyLjQ4OS0uMDYzLjk4Mi4wNTIgMS4zOTkuMzI3LjQxNi4yNzQuNzMuNjkuODg3IDEuMTguMzI0LS4yMDcuNjk0LS4zMiAxLjA3NC0uMzI3LjM3OS0uMDA2Ljc1My4wOTMgMS4wODQuMjg4LjMzLjE5NS42MDUuNDc5Ljc5Ni44MjIuMTkyLjM0NC4yOTMuNzM0LjI5MiAxLjEzMnYuMjVjLjE4NC0uMDY3LjM3Ni0uMTAxLjU3LS4xaC40MjhjMS4xOCAwIDIuMTM2IDEuMDAzIDIuMTM2IDIuMjR2NS40NWEuNjExLjYxMSAwIDAxLjAwNS4wNzhjMCAyLjU1My0uOTE5IDQuNTEtMi4zMjggNS44MjUtMS40IDEuMzA0LTMuMjQ4IDEuOTQzLTUuMDggMS45NDMtMy43MiAwLTYuMTQ3LTIuNjE0LTcuODktNS42NTZhNTYuMTQ3IDU2LjE0NyAwIDAxLTEuMTE0LTEuODY0Yy0xLjI5LTIuMjMuMjczLTUuMDI1IDIuNzMyLTUuMDI5di0yLjU0YzAtLjM4Ni4wOTYtLjc2Ny4yNzctMS4xMDMuMTgyLS4zMzcuNDQ0LS42MTguNzYtLjgxN2EyLjA1NyAyLjA1NyAwIDAxMi4xMDQtLjA1N3ptLS4wMDcgMS45NzdjMC0uMjc3LS4xMDUtLjU0My0uMjkyLS43MzlhLjk3NC45NzQgMCAwMC0uNzA1LS4zMDYuOTc0Ljk3NCAwIDAwLS43MDUuMzA2IDEuMDcyIDEuMDcyIDAgMDAtLjI5Mi43NHY1LjUyN2MwIC4xNTktLjA2LjMxLS4xNjcuNDIyYS41NTcuNTU3IDAgMDEtLjQwMy4xNzYuNTU3LjU1NyAwIDAxLS40MDMtLjE3Ni42MTIuNjEyIDAgMDEtLjE2Ny0uNDIyVjguNzcxYy0xLjU5OS4wMDQtMi41NzIgMS44MDUtMS43NTcgMy4yMTUuNDA3LjcwNS43OTQgMS4zNTcgMS4wOTYgMS44MzJsLjAwNy4wMTIuMDA4LjAxMmMxLjY3NSAyLjkyOCAzLjgwNSA1LjA4OCA2LjkxNyA1LjA4OCAxLjU4OSAwIDMuMTU4LS41NTYgNC4zMjQtMS42NDIgMS4xNC0xLjA2NCAxLjkyNi0yLjY2NSAxLjk0NS00Ljg1NWEuNjExLjYxMSAwIDAxLS4wMDQtLjA3NlY2LjgyOWMwLS4yNzctLjEwNS0uNTQzLS4yOTItLjc0YS45NzQuOTc0IDAgMDAtLjcwNS0uMzA2aC0uNDI4YS41NTcuNTU3IDAgMDAtLjQwMy4xNzUuNjEzLjYxMyAwIDAwLS4xNjcuNDIzdjEuMTk1YzAgLjE1OS0uMDYuMzEtLjE2Ni40MjNhLjU1Ny41NTcgMCAwMS0uNDAzLjE3NS41NTcuNTU3IDAgMDEtLjQwMy0uMTc1LjYxMi42MTIgMCAwMS0uMTY3LS40MjNWNC40NGMwLS4yNzctLjEwNS0uNTQzLS4yOTItLjc0YS45NzQuOTc0IDAgMDAtLjcwNS0uMzA2Ljk3NC45NzQgMCAwMC0uNzA1LjMwNiAxLjA3MiAxLjA3MiAwIDAwLS4yOTIuNzR2Mi41NGMwIC4xNTgtLjA2LjMxLS4xNjcuNDIyYS41NTcuNTU3IDAgMDEtLjQwMy4xNzUuNTU3LjU1NyAwIDAxLS40MDMtLjE3NS42MTMuNjEzIDAgMDEtLjE2Ny0uNDIyVjMuMjQ0YzAtLjI3OC0uMTA1LS41NDQtLjI5Mi0uNzRhLjk3NC45NzQgMCAwMC0uNzA1LS4zMDYuOTc0Ljk3NCAwIDAwLS43MDUuMzA2IDEuMDcyIDEuMDcyIDAgMDAtLjI5Mi43NHY0LjMzMmMwIC4xNTktLjA2LjMxLS4xNjcuNDIzYS41NTcuNTU3IDAgMDEtLjQwMy4xNzUuNTU3LjU1NyAwIDAxLS40MDMtLjE3NS42MTMuNjEzIDAgMDEtLjE2Ny0uNDIzdi0yLjU0eiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9Ii40Ii8+PC9zdmc+") 6 6,auto!important;cursor:-webkit-image-set(url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMjEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIuNDA2IDEzLjA5NEwxLjU2MiAxMGwuODQ0LTEuMTI1IDEuMTI1LS41NjMgMS4xMjUtLjI4MXYtMi4yNWwuNTYzLTEuOTY5IDEuMTI1LS41NjIgMS40MDYuNTYyLjI4MS0xLjEyNS44NDQtLjg0MyAxLjY4OC4yOCAxLjQwNi44NDUgMS42ODcuMjggMS4xMjUgMS45N2gxLjQwNmwxLjEyNSAxLjQwNi4yODIgNi40NjktMS4xMjUgMy4zNzQtMS42ODggMS40MDdMMTMuMDk0IDE5bC0yLjgxMy44NDQtMy4wOTMtMS4xMjUtMS4xMjUtLjg0NC0xLjY4OC0yLjI1LTEuOTY5LTIuNTMxeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNy4zMzYgMy4wNTljLjA0LS41MTQuMjQ4LS45OTguNTg4LTEuMzcuMzQtLjM3Mi43OTMtLjYxIDEuMjgtLjY3Mi40ODktLjA2My45ODIuMDUyIDEuMzk5LjMyNy40MTYuMjc0LjczLjY5Ljg4NyAxLjE4LjMyNC0uMjA3LjY5NC0uMzIgMS4wNzQtLjMyNy4zNzktLjAwNi43NTMuMDkzIDEuMDg0LjI4OC4zMy4xOTUuNjA1LjQ3OS43OTYuODIyLjE5Mi4zNDQuMjkzLjczNC4yOTIgMS4xMzJ2LjI1Yy4xODQtLjA2Ny4zNzYtLjEwMS41Ny0uMWguNDI4YzEuMTggMCAyLjEzNiAxLjAwMyAyLjEzNiAyLjI0djUuNDVhLjYxMS42MTEgMCAwMS4wMDUuMDc4YzAgMi41NTMtLjkxOSA0LjUxLTIuMzI4IDUuODI1LTEuNCAxLjMwNC0zLjI0OCAxLjk0My01LjA4IDEuOTQzLTMuNzIgMC02LjE0Ny0yLjYxNC03Ljg5LTUuNjU2YTU2LjE0NyA1Ni4xNDcgMCAwMS0xLjExNC0xLjg2NGMtMS4yOS0yLjIzLjI3My01LjAyNSAyLjczMi01LjAyOXYtMi41NGMwLS4zODYuMDk2LS43NjcuMjc3LTEuMTAzLjE4Mi0uMzM3LjQ0NC0uNjE4Ljc2LS44MTdhMi4wNTcgMi4wNTcgMCAwMTIuMTA0LS4wNTd6bS0uMDA3IDEuOTc3YzAtLjI3Ny0uMTA1LS41NDMtLjI5Mi0uNzM5YS45NzQuOTc0IDAgMDAtLjcwNS0uMzA2Ljk3NC45NzQgMCAwMC0uNzA1LjMwNiAxLjA3MiAxLjA3MiAwIDAwLS4yOTIuNzR2NS41MjdjMCAuMTU5LS4wNi4zMS0uMTY3LjQyMmEuNTU3LjU1NyAwIDAxLS40MDMuMTc2LjU1Ny41NTcgMCAwMS0uNDAzLS4xNzYuNjEyLjYxMiAwIDAxLS4xNjctLjQyMlY4Ljc3MWMtMS41OTkuMDA0LTIuNTcyIDEuODA1LTEuNzU3IDMuMjE1LjQwNy43MDUuNzk0IDEuMzU3IDEuMDk2IDEuODMybC4wMDcuMDEyLjAwOC4wMTJjMS42NzUgMi45MjggMy44MDUgNS4wODggNi45MTcgNS4wODggMS41ODkgMCAzLjE1OC0uNTU2IDQuMzI0LTEuNjQyIDEuMTQtMS4wNjQgMS45MjYtMi42NjUgMS45NDUtNC44NTVhLjYxMS42MTEgMCAwMS0uMDA0LS4wNzZWNi44MjljMC0uMjc3LS4xMDUtLjU0My0uMjkyLS43NGEuOTc0Ljk3NCAwIDAwLS43MDUtLjMwNmgtLjQyOGEuNTU3LjU1NyAwIDAwLS40MDMuMTc1LjYxMy42MTMgMCAwMC0uMTY3LjQyM3YxLjE5NWMwIC4xNTktLjA2LjMxLS4xNjYuNDIzYS41NTcuNTU3IDAgMDEtLjQwMy4xNzUuNTU3LjU1NyAwIDAxLS40MDMtLjE3NS42MTIuNjEyIDAgMDEtLjE2Ny0uNDIzVjQuNDRjMC0uMjc3LS4xMDUtLjU0My0uMjkyLS43NGEuOTc0Ljk3NCAwIDAwLS43MDUtLjMwNi45NzQuOTc0IDAgMDAtLjcwNS4zMDYgMS4wNzIgMS4wNzIgMCAwMC0uMjkyLjc0djIuNTRjMCAuMTU4LS4wNi4zMS0uMTY3LjQyMmEuNTU3LjU1NyAwIDAxLS40MDMuMTc1LjU1Ny41NTcgMCAwMS0uNDAzLS4xNzUuNjEzLjYxMyAwIDAxLS4xNjctLjQyMlYzLjI0NGMwLS4yNzgtLjEwNS0uNTQ0LS4yOTItLjc0YS45NzQuOTc0IDAgMDAtLjcwNS0uMzA2Ljk3NC45NzQgMCAwMC0uNzA1LjMwNiAxLjA3MiAxLjA3MiAwIDAwLS4yOTIuNzR2NC4zMzJjMCAuMTU5LS4wNi4zMS0uMTY3LjQyM2EuNTU3LjU1NyAwIDAxLS40MDMuMTc1LjU1Ny41NTcgMCAwMS0uNDAzLS4xNzUuNjEzLjYxMyAwIDAxLS4xNjctLjQyM3YtMi41NHoiIGZpbGw9IiMwMDAiLz48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjMzNiAzLjA1OWMuMDQtLjUxNC4yNDgtLjk5OC41ODgtMS4zNy4zNC0uMzcyLjc5My0uNjEgMS4yOC0uNjcyLjQ4OS0uMDYzLjk4Mi4wNTIgMS4zOTkuMzI3LjQxNi4yNzQuNzMuNjkuODg3IDEuMTguMzI0LS4yMDcuNjk0LS4zMiAxLjA3NC0uMzI3LjM3OS0uMDA2Ljc1My4wOTMgMS4wODQuMjg4LjMzLjE5NS42MDUuNDc5Ljc5Ni44MjIuMTkyLjM0NC4yOTMuNzM0LjI5MiAxLjEzMnYuMjVjLjE4NC0uMDY3LjM3Ni0uMTAxLjU3LS4xaC40MjhjMS4xOCAwIDIuMTM2IDEuMDAzIDIuMTM2IDIuMjR2NS40NWEuNjExLjYxMSAwIDAxLjAwNS4wNzhjMCAyLjU1My0uOTE5IDQuNTEtMi4zMjggNS44MjUtMS40IDEuMzA0LTMuMjQ4IDEuOTQzLTUuMDggMS45NDMtMy43MiAwLTYuMTQ3LTIuNjE0LTcuODktNS42NTZhNTYuMTQ3IDU2LjE0NyAwIDAxLTEuMTE0LTEuODY0Yy0xLjI5LTIuMjMuMjczLTUuMDI1IDIuNzMyLTUuMDI5di0yLjU0YzAtLjM4Ni4wOTYtLjc2Ny4yNzctMS4xMDMuMTgyLS4zMzcuNDQ0LS42MTguNzYtLjgxN2EyLjA1NyAyLjA1NyAwIDAxMi4xMDQtLjA1N3ptLS4wMDcgMS45NzdjMC0uMjc3LS4xMDUtLjU0My0uMjkyLS43MzlhLjk3NC45NzQgMCAwMC0uNzA1LS4zMDYuOTc0Ljk3NCAwIDAwLS43MDUuMzA2IDEuMDcyIDEuMDcyIDAgMDAtLjI5Mi43NHY1LjUyN2MwIC4xNTktLjA2LjMxLS4xNjcuNDIyYS41NTcuNTU3IDAgMDEtLjQwMy4xNzYuNTU3LjU1NyAwIDAxLS40MDMtLjE3Ni42MTIuNjEyIDAgMDEtLjE2Ny0uNDIyVjguNzcxYy0xLjU5OS4wMDQtMi41NzIgMS44MDUtMS43NTcgMy4yMTUuNDA3LjcwNS43OTQgMS4zNTcgMS4wOTYgMS44MzJsLjAwNy4wMTIuMDA4LjAxMmMxLjY3NSAyLjkyOCAzLjgwNSA1LjA4OCA2LjkxNyA1LjA4OCAxLjU4OSAwIDMuMTU4LS41NTYgNC4zMjQtMS42NDIgMS4xNC0xLjA2NCAxLjkyNi0yLjY2NSAxLjk0NS00Ljg1NWEuNjExLjYxMSAwIDAxLS4wMDQtLjA3NlY2LjgyOWMwLS4yNzctLjEwNS0uNTQzLS4yOTItLjc0YS45NzQuOTc0IDAgMDAtLjcwNS0uMzA2aC0uNDI4YS41NTcuNTU3IDAgMDAtLjQwMy4xNzUuNjEzLjYxMyAwIDAwLS4xNjcuNDIzdjEuMTk1YzAgLjE1OS0uMDYuMzEtLjE2Ni40MjNhLjU1Ny41NTcgMCAwMS0uNDAzLjE3NS41NTcuNTU3IDAgMDEtLjQwMy0uMTc1LjYxMi42MTIgMCAwMS0uMTY3LS40MjNWNC40NGMwLS4yNzctLjEwNS0uNTQzLS4yOTItLjc0YS45NzQuOTc0IDAgMDAtLjcwNS0uMzA2Ljk3NC45NzQgMCAwMC0uNzA1LjMwNiAxLjA3MiAxLjA3MiAwIDAwLS4yOTIuNzR2Mi41NGMwIC4xNTgtLjA2LjMxLS4xNjcuNDIyYS41NTcuNTU3IDAgMDEtLjQwMy4xNzUuNTU3LjU1NyAwIDAxLS40MDMtLjE3NS42MTMuNjEzIDAgMDEtLjE2Ny0uNDIyVjMuMjQ0YzAtLjI3OC0uMTA1LS41NDQtLjI5Mi0uNzRhLjk3NC45NzQgMCAwMC0uNzA1LS4zMDYuOTc0Ljk3NCAwIDAwLS43MDUuMzA2IDEuMDcyIDEuMDcyIDAgMDAtLjI5Mi43NHY0LjMzMmMwIC4xNTktLjA2LjMxLS4xNjcuNDIzYS41NTcuNTU3IDAgMDEtLjQwMy4xNzUuNTU3LjU1NyAwIDAxLS40MDMtLjE3NS42MTMuNjEzIDAgMDEtLjE2Ny0uNDIzdi0yLjU0eiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9Ii40Ii8+PC9zdmc+") 6 6,auto)!important}.fastboard-toolbar-btn.hand-button svg{width:16px}.fastboard-toolbar-btn.hand-button.is-active svg{opacity:1}.fastboard-toolbar-btn.hand-button.is-active path{fill:#5d31ff}.fastboard-toolbar-btn.hand-button.is-active svg{stroke:#5d31ff;stroke-width:.4px;stroke-dasharray:0}.netless-whiteboard div.float-bar{border-color:#e5e8f0!important;box-shadow:unset!important;border-radius:100px!important;padding:23.34px 14px!important;width:auto!important;min-width:130px!important;max-width:332px!important;padding:0 20px;background:#fff;gap:4px!important}.netless-whiteboard .float-bar .button:hover,.netless-whiteboard div.float-bar .button.disable{border-radius:4px!important;transition:.3s!important}.netless-whiteboard div.float-bar .button:hover{background-color:rgba(0,0,0,.035)!important;background-repeat:no-repeat!important}.netless-whiteboard div.float-bar>.highlight-button{background-color:rgba(0,0,0,.035)!important}.button.arrow-button.down:hover,.button.arrow-button.up:hover{border-radius:2px!important;opacity:.4!important;background:unset!important}.netless-whiteboard div.float-bar div.font-size-buttons>div.arrow-button>img{width:7.4px!important;height:4px!important}.fastboard-toolbar-btn:focus+.fastboard-toolbar-triangle{opacity:1!important}.font-size-icon,.normal-button.disable{display:none!important}.netless-whiteboard div.float-bar>.normal-button{width:32px!important;height:32px!important}.netless-whiteboard div.float-bar>input.font-size-input{padding:10px 4px!important;width:34px!important;height:28px!important;border-radius:6px!important;margin-left:0!important;font-family:Nunito!important;font-weight:600!important;font-size:11px!important}.netless-whiteboard .float-bar .font-size-menu>.cell>{font-family:Nunito!important;font-weight:600!important;font-size:10px!important}.netless-whiteboard .float-bar .font-colors-icon>.bar{width:20px!important;height:20px!important;border-radius:4px!important;top:-1.99px!important;right:-8px!important;left:-1.99px!important}.font-colors-menu{border-radius:12px!important;border:1px solid #e5e8f0!important;box-shadow:unset!important;width:158.4px!important;height:auto!important;padding:16px!important;z-index:11;gap:4px;margin-top:4px;margin-left:-52px}.bar-colors-menu-when-edit{margin-left:-17px}.float-bar .font-colors-icon>.bar{border:1px solid #efefef}.float-bar .font-colors-menu>.font-color-selected{border-color:#5d31ff!important}.float-bar .font-colors-menu>.font-color-button,.float-bar .font-colors-menu>.font-color-button>.core{border-radius:16%!important}.float-bar .font-colors-menu>.font-color-button>.core{width:20px!important;height:20px!important;margin-bottom:-.5px!important}.float-bar .font-colors-menu>.font-color-button{height:28px!important;width:28px!important;border-width:1.5px!important;margin:0!important}.normal-button.second-bar .font-colors-icon{margin:7px auto auto}.fastboard-toolbar-btn-interactive:nth-child(4) .fastboard-toolbar-triangle{display:none}#tippy-21{display:none!important;width:0;height:0}.netless-whiteboard div.float-bar div.font-size-buttons{margin-left:0!important;position:relative;right:4px!important;margin-right:-8px!important}.netless-whiteboard div.float-bar div.font-size-buttons>div.arrow-button{height:24px!important;width:24px!important}.netless-whiteboard div.float-bar div.font-size-buttons>div.up{padding-bottom:4px}.netless-whiteboard div.float-bar div.font-size-buttons>div.down{padding-top:3px}.button.normal-button img{object-position:-100px 100px;background-repeat:no-repeat;background-position:0 0!important;background-size:17px!important}.button.normal-button img[alt=lock]{background-image:url(img/board/lock.svg);background-size:13.5px!important;background-position:9px 6px!important}.button.normal-button img[alt="lock active"]{background-image:url(img/board/lock-active.svg);background-size:13.5px!important;background-position:9px 6px!important}.button.normal-button img[alt=icon]{background-image:url(img/board/align.svg);background-size:15px!important;background-position:8.5px 8px!important}.button.normal-button img[alt="icon active"]{background-image:url(img/board/align-active.svg);background-size:15px!important;background-position:8.5px 8px!important}.button.normal-button img[alt=duplicate]{background-image:url(img/board/duplicate.svg);background-size:14px!important}.button.normal-button img[alt=delete]{background-image:url(img/board/trash.svg)}.button.normal-button img[alt=text-blob]{background-image:url(img/board/bold.svg)}.button.normal-button img[alt=text-italic]{background-image:url(img/board/italic.svg)}.button.normal-button img[alt=text-line-through]{background-image:url(img/board/line-through.svg)}.button.normal-button img[alt=text-underline]{background-image:url(img/board/underline.svg)}.button.normal-button img[alt="text-blob active"]{background-image:url(img/board/bold-active.svg)!important}.button.normal-button img[alt="text-italic active"]{background-image:url(img/board/italic-active.svg)!important}.button.normal-button img[alt="text-line-through active"]{background-image:url(img/board/line-through-active.svg)!important}.button.normal-button img[alt="text-underline active"]{background-image:url(img/board/underline-active.svg)!important}.image-layer-menu img{background-repeat:no-repeat;background-position:9px 9px!important;background-size:13px!important;object-position:-99px 100px}.image-layer-menu .normal-button:first-child img{background-image:url(img/board/image-layer-menu-one.svg)!important}.image-layer-menu .normal-button:nth-child(2) img{background-image:url(img/board/image-layer-menu-two.svg)!important}.netless-whiteboard div.float-bar div.image-layer-menu>.normal-button:active{opacity:.7}.loading-balloon{border:1px solid rgba(0,0,0,.1);border-radius:24px;width:fit-content;padding:12px 18px;background-color:#fff;top:28px;left:22px;z-index:10}.loading-balloon .fa-spin{width:16px;height:16px;opacity:.4}@media (min-width:480px){.loading-balloon .fa-spin{width:18px;height:18px}}.loading-balloon .tm-caption{min-width:122px;font-weight:400;color:rgba(0,0,0,.4);line-height:18px}@media (min-width:480px){.loading-balloon .tm-caption{font-size:13px;min-width:134px}}</style><script async="" src="https://static.hotjar.com/c/hotjar-2469558.js?sv=6"></script><script async="" src="https://script.hotjar.com/modules.84f80a92c39bbd76564a.js" charset="utf-8"></script></head>
+<body>
+  <script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%402.6.1%22%2C%22gitCommitHash%22%3A%223683f5cc47e35177f1fd62a9ba17a33bedb1f07e%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22production%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%22meteorEnv%22%3A%22production%22%2C%22analyticsSettings%22%3A%7B%22Google%20Analytics%22%3A%7B%22trackingId%22%3A%22UA-73947902-1%22%7D%2C%22Amplitude%22%3A%7B%22apiKey%22%3A%223ce683a6939528c2c9887a4d2f56ba89%22%7D%2C%22heap%22%3A%221926031031%22%7D%2C%22cdn%22%3A%7B%22url%22%3A%22https%3A%2F%2Fd1lzq2es6zisuf.cloudfront.net%22%7D%2C%22ebanx%22%3A%7B%22integrationKey%22%3A%22vj6aiWk85hI2l1X_NxDJ5NRxyiAhM1usUTju4ZbAW9Q%22%7D%2C%22hub%22%3A%7B%22appId%22%3A%22hub.tools.tutormundi%22%2C%22domain%22%3A%22https%3A%2F%2Fd8kija2w4couw.cloudfront.net%2F%22%7D%2C%22onesignal%22%3A%7B%22appId%22%3A%225f05ba1d-aad2-4cf7-b2de-946aecc6bf23%22%7D%2C%22whiteboard%22%3A%7B%22AppIdentifier%22%3A%22WI4iABzMEe6_3n04Flln0w%2FyX_CabaJKCLMiw%22%2C%22region%22%3A%22us-sv%22%7D%2C%22AgoraVoice%22%3A%7B%22appId%22%3A%22022742fc4db3454b85fbdce2c7ed15f4%22%2C%22channel%22%3A%22tutormundi-teste%22%2C%22token%22%3A%22007eJxTYLjOmSL6j%2BPRLZnvXt%2FTNapYpnBduRUdyXLz%2Bc8%2F8VwvtrkrMBgYGZmbGKUlm6QkGZuYmiRZmKYlpSSnGiWbp6YYmqaZ%2FJJ6mNoQyMggf3UeCyMDBIL4AgwlpSX5RbmleSmZuiWpxSWpDAwAXa4mNQ%3D%3D%22%7D%2C%22countries%22%3A%7B%22US%22%3A%7B%22name%22%3A%22United%20States%22%2C%22prefix%22%3A%22%2B1%22%7D%2C%22BR%22%3A%7B%22name%22%3A%22Brazil%22%2C%22prefix%22%3A%22%2B55%22%7D%7D%2C%22languages%22%3A%5B%22en%22%2C%22pt-BR%22%5D%2C%22minWithdraw%22%3A5%2C%22minAffiliateWithdraw%22%3A5%2C%22trialMinutes%22%3A30%2C%22trialDays%22%3A14%2C%22apps%22%3A%7B%22coc%22%3A%7B%22name%22%3A%22COC%20Tutoria%22%2C%22schools%22%3A%5B%22coc-balneario-camboriu%22%2C%22coc-continente%22%2C%22coc-floripa%22%2C%22coc-joinville%22%2C%22coc-lages%22%2C%22coc-rio-do-sul%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22energia%22%3A%7B%22name%22%3A%22Energia%20Tutoria%22%2C%22schools%22%3A%5B%22energia-balneario-camboriu%22%2C%22energia-barreiros%22%2C%22energia-blumenau%22%2C%22energia-chapeco%22%2C%22energia-floripa-saldanha-marinho%22%2C%22energia-floripa-santos-dumont%22%2C%22energia-itajai%22%2C%22energia-palhoca%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22expoente%22%3A%7B%22name%22%3A%22TutorMundi%22%2C%22schools%22%3A%5B%22expoente-curitiba%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22positivo%22%3A%7B%22name%22%3A%22TutorMundi%22%2C%22schools%22%3A%5B%22positivo-curitiba%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22bagozzi%22%3A%7B%22name%22%3A%22TutorMundi%22%2C%22schools%22%3A%5B%22bagozzi-ourinhos%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22any%22%3A%7B%22name%22%3A%22TutorMundi%22%2C%22schools%22%3A%5B%22any%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22galt%22%3A%7B%22name%22%3A%22TutorMundi%22%2C%22schools%22%3A%5B%22galt-vestibulares%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22jardim%22%3A%7B%22name%22%3A%22TutorMundi%22%2C%22schools%22%3A%5B%22liceu-jardim%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22adventista%22%3A%7B%22name%22%3A%22TutorMundi%22%2C%22schools%22%3A%5B%22adventista-floripa-centro%22%2C%22adventista-floripa-estreito%22%2C%22adventista-itajai%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22tendencia%22%3A%7B%22name%22%3A%22Tend%C3%AAncia%20Tutoria%22%2C%22schools%22%3A%5B%22tendencia-floripa%22%5D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%7D%2C%22mobile%22%3A%7B%22android%22%3A%22app.tutormundi.com%22%2C%22ios%22%3A%22id1171236598%22%7D%7D%2C%22ROOT_URL%22%3A%22https%3A%2F%2Fapp.tutormundi.com%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22reactFastRefreshEnabled%22%3Atrue%2C%22kadira%22%3A%7B%22appId%22%3A%22idicLvWrXmh8sJgRb%22%2C%22endpoint%22%3A%22https%3A%2F%2Fengine.montiapm.com%22%2C%22clientEngineSyncDelay%22%3A10000%2C%22recordIPAddress%22%3A%22full%22%2C%22enableErrorTracking%22%3Atrue%7D%2C%22autoupdate%22%3A%7B%22versions%22%3A%7B%22web.browser%22%3A%7B%22version%22%3A%22516d4653982a2b839d0db7d148edbf54f40eda6b%22%2C%22versionRefreshable%22%3A%22f67332d2f7c1b72885f7525a6af5e05e8df40729%22%2C%22versionNonRefreshable%22%3A%22586deab87b4a766e85a3cfa8b15f297fbdda224b%22%2C%22versionReplaceable%22%3A%229e9f83037bc28b63c5fd4c78a4ecc86c1e2595e0%22%7D%2C%22web.browser.legacy%22%3A%7B%22version%22%3A%2243fa3c412e3d46d75c0ea7671dae888e1eec1f4d%22%2C%22versionRefreshable%22%3A%22f67332d2f7c1b72885f7525a6af5e05e8df40729%22%2C%22versionNonRefreshable%22%3A%2251e1e02311624008e5147c693c02b413870987eb%22%2C%22versionReplaceable%22%3A%229e9f83037bc28b63c5fd4c78a4ecc86c1e2595e0%22%7D%2C%22web.cordova%22%3A%7B%22version%22%3A%226f01edf74a61d632342d535d4c950c2db0ac91d8%22%2C%22versionRefreshable%22%3A%22f67332d2f7c1b72885f7525a6af5e05e8df40729%22%2C%22versionNonRefreshable%22%3A%221add550ba0e8ca3b6bcaff993e480bc4f7cee003%22%2C%22versionReplaceable%22%3A%229e9f83037bc28b63c5fd4c78a4ecc86c1e2595e0%22%7D%7D%2C%22autoupdateVersion%22%3Anull%2C%22autoupdateVersionRefreshable%22%3Anull%2C%22autoupdateVersionCordova%22%3Anull%2C%22appId%22%3A%221uoquzua8qq9s10x9wr5%22%7D%2C%22appId%22%3A%221uoquzua8qq9s10x9wr5%22%2C%22accountsConfigCalled%22%3Atrue%2C%22isModern%22%3Atrue%7D"))</script>
+
+  <script type="text/javascript" src="/8ad65d860c7b152e7552946568b045a80b332484.js?meteor_js_resource=true"></script>
+
+
+
+
+
+  
+
+
+  <div class="hidden">
+    
+  </div>
+  <div class="Site full-height no-touch basic-background">
+    
+    <!--================================-->
+  <!-- NAVBAR                         -->
+  <!--================================-->
+  
+    <div class="Site-header top left position-fixed full-height fill-width flex flex-column align-items-center justify-content-space-between">
+
+    <!--=================-->
+    <!-- TUTORMUNDI LOGO -->
+    <!--=================-->
+    <a class="tm-mt-24" href="/home">
+    <img src="https://d1lzq2es6zisuf.cloudfront.net/img/tm-logo-mini.png" class="tutorMundi-logo" alt="TutorMundi">
+  </a>
+
+    <!--=================-->
+    <!-- NAVBAR SWITCH -->
+    <!--=================-->
+    <div class="full-width flex flex-column align-items-center">
+      
+        <span class="available-button text-available--not tm-mb-8">Atendimento ao vivo</span>
+        <label id="checkAvailable" class="tm-switch-button">
+    <input type="checkbox">
+    <span class="slider position-absolute"></span>
+
+    
+      
+    
+  </label>
+      
+      <!--=================-->
+      <!-- BOTTOM NAVBAR BUTTONS -->
+      <!--=================-->
+      <div class="tm-mt-72 flex flex-column align-items-center full-width">
+        <!-- Home for each type of user-->
+  
+    <a id="tutorHome" href="/tutor-home" class="nav-button--clicked navButton flex flex-column align-items-center justify-content-center pointer position-relative tm-pt-24 tm-pb-24 full-width">
+
+    <i class="icon-faculty nav-icon tm-grey pointer">
+      
+    </i>
+    <label for="tutorHome" class="pointer nav-icon-label tm-mb-0 tm-grey">Início</label>
+    
+      <div class="nav-button__highlight position-absolute"></div>
+    
+  </a>
+
+    
+    <a id="myStudents" href="/my-students" class="nav-button navButton flex flex-column align-items-center justify-content-center pointer position-relative tm-pt-24 tm-pb-24 full-width">
+
+    <i class="icon-university-cap nav-icon tm-grey pointer">
+      
+    </i>
+    <label for="myStudents" class="pointer nav-icon-label tm-mb-0 tm-grey">Alunos</label>
+    
+      <div class="nav-button__highlight position-absolute"></div>
+    
+  </a>
+   
+  
+
+  <!-- Routes only school admins will have -->
+  
+
+  <!-- Route everyone has -->
+  <a id="profile" href="/profile" class="nav-button navButton flex flex-column align-items-center justify-content-center pointer position-relative tm-pt-24 tm-pb-24 full-width">
+
+    <i class="icon-settings nav-icon tm-grey pointer">
+      
+    </i>
+    <label for="profile" class="pointer nav-icon-label tm-mb-0 tm-grey">Opções</label>
+    
+      <div class="nav-button__highlight position-absolute"></div>
+    
+  </a>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--================================-->
+  <!-- BODY                           -->
+  <!--================================-->
+  <div class="Site-content Site-content--private">
+    
+    <link rel="prefetch" href="https://d1lzq2es6zisuf.cloudfront.net/whiteboard.min.js">
+
+    <section id="services" class="tutor-home">
+      <div class="home-header position-relative">
+    <img src="https://d1lzq2es6zisuf.cloudfront.net/img/tm-logo-mini.png" class="tm-mb-60">
+    <a href="/history" class="position-absolute pointer">
+      <i class="icon-history pointer position-relative" style="color:white;">
+        
+      </i>
+    </a>
+    <h3 class="tm-big-title white tm-mb-12">Oiii, Matheus,</h3>
+    <p class="tm-body white">tutor de bom?</p> 
+  </div>
+
+      <div class="container position-relative">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="home-box-container tm-big-pt-10 tm-left-pt-12 tm-mb-36 tm-big-mb-48">
+            
+              <div class="js-earnings home-box pointer tm-pt-8 tm-big-pt-12 pt-8 tm-pr-8 tm-big-pr-12 tm-pb-16 tm-pl-8 tm-big-pl-12">
+                <p class="tm-label uppercase tm-mb-16">Ganhos</p>
+                <p class="tm-small-title text-center">R$&nbsp;0,00</p>
+              </div>
+            
+
+            <div class="js-evaluations home-box pointer tm-pt-8 tm-big-pt-12 pt-8 tm-pr-8 tm-big-pr-12 tm-pb-16 tm-pl-8 tm-big-pl-12">
+              <p class="tm-label uppercase tm-mb-16">Avaliações</p>
+              <div class="flex align-items-center justify-content-center">
+                <i class="icon-star tm-mr-4 tm-big-mr-6"></i>
+                <p class="tm-small-title text-center">4,90</p>
+              </div>
+            </div>
+
+            
+              <div class="js-referrals home-box pointer tm-pt-8 tm-big-pt-12 pt-8 tm-pr-8 tm-big-pr-12 tm-pb-16 tm-pl-8 tm-big-pl-12">
+                <p class="tm-label uppercase tm-mb-16">Indicações</p>
+                <p class="tm-small-title lowercase text-center">0 Tutores</p>
+              </div>
+            
+          </div>
+
+          
+            <p class="tm-small-title tm-mb-18 tm-big-mb-24">Atendimento ao vivo</p>
+            <div class="waiting-requests chat hidden flex justify-content-center align-items-center tm-mb-12 tm-big-mb-18 fade-out">
+              <img class="fa-spin tm-mr-8 tm-big-mr-12" src="https://d1lzq2es6zisuf.cloudfront.net/img/loading.svg">
+              <p class="waiting-text tm-label">Aguardando requisição de aluno<span class="tm-loading"></span></p>
+            </div>
+
+            <div class="dynamic-rate-box position-relative tm-shadow-1 pointer tm-pt-12 tm-big-pt-18 tm-pr-18 tm-pl-18" style="height: 130px;">
+              
+                <div class="flex align-items-center justify-content-space-between tm-mb-20 tm-big-mb-24">
+                  <p class="tm-label uppercase">Tarifa dinâmica</p>
+                  
+                    <i class="icon-chevron-right flex align-items-center justify-content-center"></i>
+                  
+                </div>
+                <ul class="tm-mb-0 tm-pl-0">
+                  
+                    <li class="flex align-items-baseline tm-mt-8">
+                      <span>Redação</span>
+                      <hr class="tm-mt-14 tm-mr-12 tm-mb-0 tm-ml-12 full-width">
+                      <span>1.3x</span>
+                    </li>
+                  
+                    <li class="flex align-items-baseline tm-mt-8">
+                      <span>Inglês</span>
+                      <hr class="tm-mt-14 tm-mr-12 tm-mb-0 tm-ml-12 full-width">
+                      <span>1.3x</span>
+                    </li>
+                  
+                    <li class="flex align-items-baseline tm-mt-8 tm-mb-18">
+                      <span>Ensino religioso</span>
+                      <hr class="tm-mt-14 tm-mr-12 tm-mb-0 tm-ml-12 full-width">
+                      <span>1.3x</span>
+                    </li>
+                  
+                </ul>
+                <div class="accordion-shadow position-absolute"></div>
+              
+            </div>
+          
+
+          <p class="tm-small-title tm-mb-18 tm-big-mb-24 tm-mt-36">Plantão de dúvidas</p>
+          
+            <div class="waiting-requests commented flex flex-column align-items-center justify-content-center tm-mt-60 tm-mb-12">
+              <img class="fa-spin tm-mb-12" src="https://d1lzq2es6zisuf.cloudfront.net/img/loading.svg">
+              <p class="waiting-text tm-label">Aguardando dúvidas<span class="tm-loading"></span></p>
+            </div>
+          
+
+        </div>
+      </div>
+    </section>
+
+  
+  </div>
+
+  
+  
+  </div><iframe id="_hjSafeContext_920328" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom"></iframe><div class="intercom-lightweight-app"><style id="intercom-lightweight-app-style" type="text/css">
+  @keyframes intercom-lightweight-app-launcher {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes intercom-lightweight-app-gradient {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes intercom-lightweight-app-messenger {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .intercom-lightweight-app {
+    position: fixed;
+    z-index: 2147483001;
+    width: 0;
+    height: 0;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+  }
+
+  .intercom-lightweight-app-gradient {
+    position: fixed;
+    z-index: 2147483002;
+    width: 500px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at bottom right,
+      rgba(29, 39, 54, 0.16) 0%,
+      rgba(29, 39, 54, 0) 72%);
+    animation: intercom-lightweight-app-gradient 200ms ease-out;
+  }
+
+  .intercom-lightweight-app-launcher {
+    position: fixed;
+    z-index: 2147483003;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none;
+    bottom: 20px;
+    right: 20px;
+    max-width: 48px;
+    width: 48px;
+    max-height: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: undefined;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+    transition: transform 167ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+    box-sizing: content-box;
+  }
+
+
+  .intercom-lightweight-app-launcher:hover {
+    transition: transform 250ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+    transform: scale(1.1)
+  }
+
+  .intercom-lightweight-app-launcher:active {
+    transform: scale(0.85);
+    transition: transform 134ms cubic-bezier(0.45, 0, 0.2, 1);
+  }
+
+
+  .intercom-lightweight-app-launcher:focus {
+    outline: none;
+
+    
+  }
+
+  .intercom-lightweight-app-launcher-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    transition: transform 100ms linear, opacity 80ms linear;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg path {
+    fill: undefined;
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg {
+    height: 44px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg path {
+    fill: undefined;
+  }
+
+  .intercom-lightweight-app-launcher-custom-icon-open {
+    max-height: 24px;
+    max-width: 24px;
+
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize {
+    
+        opacity: 0;
+        transform: rotate(-60deg) scale(0);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg path {
+    fill: undefined;
+  }
+
+  .intercom-lightweight-app-messenger {
+    position: fixed;
+    z-index: 2147483003;
+    overflow: hidden;
+    background-color: white;
+    animation: intercom-lightweight-app-messenger 250ms cubic-bezier(0, 1, 1, 1);
+    transform-origin: bottom right;
+
+    
+        width: 400px;
+        height: calc(100% - 40px);
+        max-height: 704px;
+        min-height: 250px;
+        right: 20px;
+        bottom: 20px;
+        box-shadow: 0 5px 40px rgba(0,0,0,0.16);
+      
+
+    border-radius: 16px;
+  }
+
+  .intercom-lightweight-app-messenger-header {
+    height: 64px;
+    border-bottom: none;
+    background: undefined
+
+    
+  }
+
+  .intercom-lightweight-app-messenger-footer{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    
+  }
+
+  @media print {
+    .intercom-lightweight-app {
+      display: none;
+    }
+  }
+</style></div></body></html>
