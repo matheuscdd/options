@@ -8,9 +8,7 @@ audio.appendChild(source);
 function verifyTax() {
   const container = document.querySelector('.dynamic-rate-box');
   if (!container) return;
-  if (container.innerText.includes('Redação')) {
-    audio.play();
-  }
+  if (container.innerText.includes('Redação')) audio.play();
   setTimeout(() => verifyTax(), 30 * 1000)
 }
 setTimeout(() => verifyTax(), 20 * 1000);
