@@ -13,4 +13,4 @@ function verifyTax() {
   }
   setTimeout(() => verifyTax(), 30 * 1000)
 }
-verifyTax();
+setTimeout(() => verifyTax(), 20 * 1000);
