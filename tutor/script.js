@@ -12,3 +12,4 @@ function verifyTax() {
   setTimeout(() => verifyTax(), 30 * 1000)
 }
 setTimeout(() => verifyTax(), 20 * 1000);
+console.log('executou')
