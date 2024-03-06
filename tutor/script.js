@@ -8,8 +8,9 @@ function createAudio(src) {
   return audio;
 }
 
-const success = createAudio('https://github.com/matheuscdd/options/raw/main/tutor/aleluia.mp3')
-const fail = createAudio('');
+const base = 'https://github.com/matheuscdd/options/raw/main/tutor/';
+const success = createAudio(base + 'aleluia.mp3')
+const fail = createAudio(base + 'sad.mp3');
 
 let tax = false;
 function verifyTax() {
