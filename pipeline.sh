@@ -21,7 +21,7 @@ sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ul
 # python
 sudo apt install -y software-properties-common 
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.10 python3.10-venv 
+sudo apt install python3.10 python3.10-venv python3.10-dev
 python3.10 --version
 
 # Firefox Dev
