@@ -7,7 +7,7 @@ sudo snap refresh
 sudo flatpak update -y
 sudo apt install -y jq bat xclip flameshot gpick wmctrl xdotool xbindkeys playerctl fonts-cascadia-code
 
-sudo flatpak install --noninteractive flathub io.dbeaver.DBeaverCommunity rest.insomnia.Insomnia org.chromium.Chromium com.obsproject.Studio us.zoom.Zoom com.mongodb.Compass com.github.hluk.copyq com.vixalien.sticky com.brave.Browser
+sudo flatpak install --noninteractive flathub io.dbeaver.DBeaverCommunity rest.insomnia.Insomnia org.chromium.Chromium com.obsproject.Studio us.zoom.Zoom com.mongodb.Compass com.github.hluk.copyq com.vixalien.sticky com.brave.Browser org.onlyoffice.desktopeditors
 
 sudo snap install code --classic 
 sudo snap install code-insiders --classic 
