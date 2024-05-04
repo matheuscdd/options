@@ -10,18 +10,8 @@ alias vm="ssh $yor"
 alias vma="echo a | vm sudo -S"
 alias update_firefox='wget "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US" -O Firefox-dev.tar.bz2 && sudo tar xjf  Firefox-dev.tar.bz2 -C /opt/ && rm -r Firefox-dev.tar.bz2'
 alias ..="cd .."
-alias selsh="docker exec -it portal_stream_test-web-1 python manage.py"
-alias porsh="docker exec -it portal_stream-web-1 python manage.py"
-alias sel="docker compose -f docker-compose.test.yml -p portal_stream_test"
-alias por="docker compose -f docker-compose.dev.yml"
-alias selup="docker compose -f docker-compose.test.yml -p portal_stream_test up"
-alias porup="docker compose -f docker-compose.dev.yml up"
-alias selstop="docker compose -f docker-compose.test.yml -p portal_stream_test stop"
-alias porstop="docker compose -f docker-compose.dev.yml stop"
-alias seldown="docker compose -f docker-compose.test.yml -p portal_stream_test down"
-alias pordown="docker compose -f docker-compose.dev.yml down"
 alias copy="xclip -selection clipboard"
-
+alias sudo="sudo "
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
@@ -41,3 +31,4 @@ Loader() {
   echo ''
 }
 export BAT_THEME="GitHub"
+xmodmap ~/.Xmodmap
