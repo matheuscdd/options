@@ -12,6 +12,7 @@ alias update_firefox='wget "https://download.mozilla.org/?product=firefox-devedi
 alias ..="cd .."
 alias copy="xclip -selection clipboard"
 alias sudo="sudo "
+alias mkto="install -D /dev/null"
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
