@@ -39,7 +39,7 @@ sf() {
     local _date=$(date +%Y-%m-%d-\>%H_%M)
     local new="sf_$curr-$_date"
     declare -rl stash='stash@{0}'
-    git stash 1>/dev/null 2>&1
+    git stash -u 1>/dev/null 2>&1
     git checkout -b "$new" 1>/dev/null 2>&1
     git stash apply $stash 1>/dev/null 2>&1
     git add . 1>/dev/null 2>&1
