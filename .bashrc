@@ -45,6 +45,8 @@ sf() {
     git stash apply $stash 1>/dev/null 2>&1
     git add . 1>/dev/null 2>&1
     git commit -m "commit: $new" 1>/dev/null 2>&1
+    git add . 1>/dev/null 2>&1
+    git commit -m "commit: $new" 1>/dev/null 2>&1
     git switch $curr 1>/dev/null 2>&1
     git stash apply $stash 1>/dev/null 2>&1
     git stash drop $stash 1>/dev/null 2>&1
