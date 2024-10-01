@@ -13,7 +13,7 @@ alias ..="cd .."
 alias copy="xclip -selection clipboard"
 alias sudo="sudo "
 alias mkto="install -D /dev/null"
-alias mypip="curl ifconfig.me"
+alias mypip="curl -s ifconfig.me"
 alias mylip="hostname -I | cut -f 1 -d ' '"
 mkcd() {
   mkdir -p "$1" && cd "$1"
