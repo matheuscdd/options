@@ -46,10 +46,9 @@ Loader() {
   echo ''
 }
 gu() {
-    git switch main 1>/dev/null 2>&1
-    git branch -D "$1" 1>/dev/null 2>&1
     git fetch --all
     git switch "$1"
+    git reset --hard "origin/$1"
 }
 export BAT_THEME="GitHub"
 xmodmap ~/.Xmodmap
